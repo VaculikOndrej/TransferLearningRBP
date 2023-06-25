@@ -16,8 +16,22 @@ where,
  - **label** = 0 or 1
    - 0 = negative, 1 = positive
 
-`/data` folder contains all the tokenizers needed, other data may be downloaded from the following link: LINK
+## Data
+`/data/tokenizers` folder contains all the tokenizers needed.
 
+`/data/training_data` folder contains all the training and evaluation data used in our project.
+
+**NOTE:** The following data are compressed due to their size and must be decompressed before users use them:
+```
+/data/training_data/PTB/train.tar.gz
+/data/training_data/rbp24_binary/train.tar.gz
+/data/training_data/rbp24_proteins/CLIPSEQ_AGO2/train.tar.gz
+/data/training_data/rbp24_proteins/ICLIP_TDP43/train.tar.gz
+/data/training_data/rbp24_proteins/ICLIP_TIAL1/train.tar.gz
+/data/training_data/rbp24_proteins/PARCLIP_HUR/train.tar.gz
+/data/training_data/rbp31_binary/train.tar.gz
+```
+## Code
 `/src` folder contains four individual scripts, which can run individually, however user must run them in the following order:
   1. `basemodel_parameter_search.py`
   2. `pretrain_baseline_model.py`
@@ -37,7 +51,6 @@ conda env create -n ENVNAME --file /environment/environment.yml
 
 pip install -r environment/requirements.txt
 ```
-The data used in our project may be downloaded from: **TO BE DONE**
 
 ## Citing Transfer Learning RBP
 If you use Transfer Learning RBP in your research, please cite it as follows:
