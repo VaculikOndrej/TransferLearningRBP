@@ -1,8 +1,10 @@
 # Transfer Learning RBP
 
-This repo allows to pre-train a baseline model on the binary data composed of positive and negative binding sites of various RNA binding proteins (RBP), and then uses the gained knowledge to fine-tune it on individual protein datasets to get an optimal performance, especially for proteins with insufficient amount of training data. 
+Link to the related scientific work: **TO BE ADDED**
 
-Currently, users must use our data or prepare their own in the following **.tsv** form:
+This repository allows to pre-train a baseline model on binary data containing positive and negative binding sites of various RNA binding proteins (RBP). The resulting model can be further fine-tuned on individual protein datasets to achieve an optimal performance, particularly benefiting proteins with limited training data.
+
+Currently, users have the option to utilize our provided data or prepare their own datasets using the following **.tsv** format:
 
 `header RNASequence  EvolConservation  secStruct  label`
 
